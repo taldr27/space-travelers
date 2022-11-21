@@ -1,21 +1,20 @@
 import React from 'react';
-import planet from './images/planet.png';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Nav from './components/NavBar';
+import Missions from './pages/Missions';
+import Profile from './pages/Profile';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <nav>
-          <img src={planet} alt="planet-icon" />
-          <h1>Space Traveler&apos;s Hub</h1>
-          <ul>
-            <li>Rockets</li>
-            <li>Missions</li>
-            <li>My Profile</li>
-          </ul>
-        </nav>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Nav />} />
+          <Route path="/missions" element={<Missions />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

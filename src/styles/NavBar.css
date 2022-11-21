@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 3em;
+  margin-block: 2em;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  gap: 1em;
+}
+
+.navBar-link {
+  color: black;
+  text-decoration: none;
+}
+
+.selected {
+  color: blue;
+  text-decoration: underline;
+}
