@@ -4,6 +4,7 @@ import './App.css';
 import Nav from './components/NavBar';
 import Missions from './pages/Missions';
 import Profile from './pages/Profile';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

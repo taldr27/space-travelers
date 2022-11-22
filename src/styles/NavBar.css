@@ -2,8 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 90%;
   margin-inline: 3em;
-  margin-block: 2em;
+  margin-block: 1em;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  padding-bottom: 0.3em;
+}
+
+.logo-img {
+  max-width: 15%;
 }
 
 .logo-title {

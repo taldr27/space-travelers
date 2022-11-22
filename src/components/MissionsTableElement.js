@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/Button';
 import '../styles/MissionsTableElement.css';
 
 const Mission = ({ missionName, description }) => (
   <>
     <tr>
-      <td>{missionName}</td>
+      <th>{missionName}</th>
       <td>{description}</td>
-      <td><button type="button">NOT A MEMBER</button></td>
-      <td><button type="button">JOIN MISSION</button></td>
+      <td><Button variant="secondary" type="button">NOT A MEMBER</Button></td>
+      <td><Button variant="secondary" type="button">JOIN MISSION</Button></td>
     </tr>
   </>
 );
