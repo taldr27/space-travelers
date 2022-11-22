@@ -18,3 +18,7 @@ table {
 .thStatus {
   width: 15%;
 }
+
+.leaveBtn {
+  border: 1px solid red;
+}
