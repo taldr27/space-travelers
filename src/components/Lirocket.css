@@ -1,26 +1,28 @@
-.parentLielementRock{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
-}
-.licontent{
-    display: flex;
-    width: 100%;
-    padding-inline: 3em;
+.parentLielementRock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
-.image_rockets{
-    max-width: 90%;
+.licontent {
+  display: flex;
+  width: 100%;
+  padding-inline: 3em;
 }
 
-.imgWrapper{
-    width: 30%;
+.image_rockets {
+  max-width: 90%;
 }
-.rigthContent{
-    width: 80%;
-    display: flex;
-    align-items: flex-start;
-    font-size: 1.9em;
-    flex-wrap: wrap;
+
+.imgWrapper {
+  width: 30%;
+}
+
+.rigthContent {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.9em;
+  flex-wrap: wrap;
 }
