@@ -3,18 +3,19 @@ import PropTypes from 'prop-types';
 import './Lirocket.css';
 import Button from 'react-bootstrap/Button';
 import { useDispatch } from 'react-redux';
-import { reservedRockets } from '../redux/rockets/Rockets';
+import { reservedRockets, cancelReservedRockets } from '../redux/rockets/Rockets';
 
 const Lielem = ({
-  id, img, name, description,
+  id, img, name, description, reserved,
 }) => {
   const dispatch = useDispatch();
 
   const reservation = () => {
     dispatch(reservedRockets(id));
-    // document.querySelector(`.reservationL_${e.target.id}`).style.display = 'block';
-    // document.querySelector(`.buttoonRocket_${e.target.id}`).style.display = 'none';
-    // document.querySelector(`.buttoonRocketCancel_${e.target.id}`).style.display = 'block';
+  };
+
+  const cancelReservation = () => {
+    dispatch(cancelReservedRockets(id));
   };
 
   return (
@@ -23,16 +24,28 @@ const Lielem = ({
         <img src={img} alt="60px" className="image_rockets" />
       </div>
       <div className="rigthContent">
-        <p
-          style={{ display: 'none' }}
-          className={`reservationL_${id}`}
-        >
-          Reserved
-        </p>
-        <h1 className="titleRocket">{name}</h1>
-        <p className="parafRocket">{description}</p>
-        <Button id={id} variant="primary" type="button" onClick={reservation} className={`buttoonRocket_${id}`}>Reserve Rocket</Button>
-        <Button id={id} variant="primary" type="button" onClick={reservation} className={`buttoonRocketCancel_${id}`} style={{ display: 'none' }}>Cancel Reservation</Button>
+        <div>
+          <p
+            style={{ display: 'none' }}
+            className={`reservationL_${id}`}
+          >
+            Reserved
+          </p>
+          <h1 className="titleRocket">{name}</h1>
+
+          <p className="parafRocket">
+            {reserved && (<button type="button" className="buttonConfirm">Reserved</button>)}
+            {description}
+          </p>
+          {!reserved && (
+            <Button id={id} variant="primary" type="button" onClick={reservation}>Reserve Rocket</Button>
+          )}
+          {reserved && (
+            <Button id={id} variant="outline-secondary" type="button" onClick={cancelReservation}>Cancel Reservation</Button>
+
+          )}
+
+        </div>
       </div>
     </li>
   );
@@ -44,4 +57,5 @@ Lielem.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
