@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Mission from '../components/MissionsTable';
 import Nav from '../components/NavBar';
 import { fetchMissions } from '../redux/missions/Missions';
 
@@ -18,6 +19,7 @@ const Missions = () => {
     <>
       <Nav />
       <button type="button" onClick={onClick}>Add</button>
+      <Mission />
       <h2>hi</h2>
     </>
   );
