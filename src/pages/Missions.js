@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Mission from '../components/MissionsTable';
+import Mission from '../components/MissionsTableElement';
 import Nav from '../components/NavBar';
 import { fetchMissions } from '../redux/missions/Missions';
 
@@ -12,15 +12,27 @@ const Missions = () => {
     dispatch(fetchMissions());
   }, [dispatch]);
 
-  const onClick = () => {
-    console.log(missions);
-  };
   return (
     <>
       <Nav />
-      <button type="button" onClick={onClick}>Add</button>
-      <Mission />
-      <h2>hi</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <Mission
+              key={mission.mission_id}
+              missionName={mission.mission_name}
+              description={mission.description}
+            />
+          ))}
+        </tbody>
+      </table>
     </>
   );
 };
