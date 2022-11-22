@@ -10,7 +10,7 @@ const RocketsContainer = () => {
   useEffect(() => {
     dispatch(getRockets());
   }, [dispatch]);
-
+  console.log(dataRo);
   return (
 
     <>
@@ -19,9 +19,11 @@ const RocketsContainer = () => {
         { dataRo.map((r) => (
           <Lielem
             key={r.id}
-            img={r.flickr_images[0]}
-            title={r.rocket_name}
-            paragraph={r.description}
+            id={r.id}
+            img={r.img}
+            name={r.name}
+            description={r.description}
+            reserved={r.reserved}
           />
         ))}
 
