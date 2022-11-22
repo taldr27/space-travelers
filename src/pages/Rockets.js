@@ -10,14 +10,21 @@ const RocketsContainer = () => {
   useEffect(() => {
     dispatch(getRockets());
   }, [dispatch]);
-  console.log(dataRo);
 
   return (
 
     <>
       <Nav />
-      <ul>
-        <Lielem img="asdadasdasd/dasda/dasd" title="Three" paragraph="sdafasdfsdfasdfd" />
+      <ul className="parentLielementRock">
+        { dataRo.map((r) => (
+          <Lielem
+            key={r.id}
+            img={r.flickr_images[0]}
+            title={r.rocket_name}
+            paragraph={r.description}
+          />
+        ))}
+
       </ul>
     </>
   );

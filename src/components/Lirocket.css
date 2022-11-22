@@ -1,0 +1,28 @@
+.parentLielementRock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.licontent {
+  display: flex;
+  width: 100%;
+  padding-inline: 3em;
+}
+
+.image_rockets {
+  max-width: 90%;
+}
+
+.imgWrapper {
+  width: 30%;
+}
+
+.rigthContent {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.9em;
+  flex-wrap: wrap;
+}
