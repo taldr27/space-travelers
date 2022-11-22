@@ -8,11 +8,10 @@ import { fetchMissions } from '../redux/missions/Missions';
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchMissions());
   }, [dispatch]);
-
+  console.log(missions);
   return (
     <>
       <Nav />
@@ -29,6 +28,7 @@ const Missions = () => {
             {missions.map((mission) => (
               <Mission
                 key={mission.id}
+                id={mission.id}
                 missionName={mission.missionName}
                 description={mission.missionDescription}
                 reserved={mission.reserved}
@@ -40,5 +40,4 @@ const Missions = () => {
     </>
   );
 };
-
 export default Missions;
