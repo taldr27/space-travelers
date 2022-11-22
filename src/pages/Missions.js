@@ -11,7 +11,6 @@ const Missions = () => {
   useEffect(() => {
     dispatch(fetchMissions());
   }, [dispatch]);
-  console.log(missions);
   return (
     <>
       <Nav />
