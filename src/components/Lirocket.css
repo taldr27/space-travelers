@@ -27,10 +27,10 @@
   flex-wrap: wrap;
 }
 
-.buttonConfirm{
+.buttonConfirm {
   background-color: #18a2b8;
-  border-radius: .5em;
-  font-size: .6em;
+  border-radius: 0.5em;
+  font-size: 0.6em;
   font-weight: 500;
   border: none;
   padding: 5px;

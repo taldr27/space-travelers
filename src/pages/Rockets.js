@@ -10,7 +10,6 @@ const RocketsContainer = () => {
   useEffect(() => {
     dispatch(getRockets());
   }, [dispatch]);
-  console.log(dataRo);
   return (
 
     <>
