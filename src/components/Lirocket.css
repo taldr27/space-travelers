@@ -26,3 +26,13 @@
   font-size: 1.9em;
   flex-wrap: wrap;
 }
+
+.buttonConfirm {
+  background-color: #18a2b8;
+  border-radius: 0.5em;
+  font-size: 0.6em;
+  font-weight: 500;
+  border: none;
+  padding: 5px;
+  color: white;
+}
