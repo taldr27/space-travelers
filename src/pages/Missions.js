@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Table from 'react-bootstrap/Table';
+import Mission from '../components/MissionsTableElement';
 import Nav from '../components/NavBar';
 import { fetchMissions } from '../redux/missions/Missions';
 
@@ -11,14 +13,29 @@ const Missions = () => {
     dispatch(fetchMissions());
   }, [dispatch]);
 
-  const onClick = () => {
-    console.log(missions);
-  };
   return (
     <>
       <Nav />
-      <button type="button" onClick={onClick}>Add</button>
-      <h2>hi</h2>
+      <div className="table-container">
+        <Table striped bordered hover size="sm">
+          <thead>
+            <tr>
+              <th className="thMission">Mission</th>
+              <th className="thDescription">Description</th>
+              <th className="thStatus">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {missions.map((mission) => (
+              <Mission
+                key={mission.mission_id}
+                missionName={mission.mission_name}
+                description={mission.description}
+              />
+            ))}
+          </tbody>
+        </Table>
+      </div>
     </>
   );
 };

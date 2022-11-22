@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <header className="header">
       <div className="logo-title">
-        <img src={planet} alt="planet-icon" />
+        <img src={planet} alt="planet-icon" className="logo-img" />
         <h1>Space Traveler&apos;s Hub</h1>
       </div>
       <nav>
