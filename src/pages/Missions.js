@@ -9,8 +9,10 @@ const Missions = () => {
   const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (!missions.length) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, missions.length]);
   return (
     <>
       <Nav />
