@@ -1,6 +1,8 @@
 import { useSelector } from 'react-redux';
+import Table from 'react-bootstrap/Table';
 import Nav from '../components/NavBar';
 import ProfileMissions from '../components/ProfileMissions';
+import '../styles/Profile.css';
 // import ProfileRockets from '../components/ProfileRockets';
 
 const Profile = () => {
@@ -9,15 +11,24 @@ const Profile = () => {
   return (
     <>
       <Nav />
-      <div>
-        {
-          joinedMissions.map((joined) => (
-            <ProfileMissions
-              key={joined.id}
-              name={joined.missionName}
-            />
-          ))
-        }
+      <div className="tables">
+        <Table className="table-bootstrap">
+          <thead>
+            <tr>
+              <th>My Mission</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              joinedMissions.map((joined) => (
+                <ProfileMissions
+                  key={joined.id}
+                  name={joined.missionName}
+                />
+              ))
+            }
+          </tbody>
+        </Table>
       </div>
     </>
   );

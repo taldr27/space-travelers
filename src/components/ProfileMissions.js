@@ -4,7 +4,9 @@ const ProfileMissions = ({ name }) => {
   console.log('asd');
   return (
     <>
-      <p>{name}</p>
+      <tr>
+        <td>{name}</td>
+      </tr>
     </>
   );
 };
