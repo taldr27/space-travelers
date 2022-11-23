@@ -1,6 +1,5 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
-import './Lirocket.css';
+import '../styles/Lirocket.css';
 import Button from 'react-bootstrap/Button';
 import { useDispatch } from 'react-redux';
 import { reservedRockets, cancelReservedRockets } from '../redux/rockets/Rockets';

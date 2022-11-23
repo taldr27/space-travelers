@@ -1,9 +1,14 @@
 import Nav from '../components/NavBar';
+import ProfileMissions from '../components/ProfileMissions';
+import ProfileRockets from '../components/ProfileRockets';
 
 const Profile = () => (
   <>
     <Nav />
-    <h2>hello</h2>
+    <div>
+      <ProfileMissions />
+      <ProfileRockets />
+    </div>
   </>
 );
 
