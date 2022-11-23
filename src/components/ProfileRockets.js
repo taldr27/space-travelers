@@ -1,7 +1,15 @@
-const ProfileRockets = () => (
+import PropTypes from 'prop-types';
+
+const ProfileRockets = ({ name }) => (
   <>
-    <h1>ProfileRockets</h1>
+    <tr>
+      <td>{name}</td>
+    </tr>
   </>
 );
 
 export default ProfileRockets;
+
+ProfileRockets.propTypes = {
+  name: PropTypes.string.isRequired,
+};
