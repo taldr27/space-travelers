@@ -6,7 +6,8 @@
   width: 40% !important;
   border: 5px solid black;
 }
-.tables{
+
+.tables {
   display: flex;
   justify-content: space-evenly;
   font-size: 1.5em;
