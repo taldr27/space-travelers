@@ -8,8 +8,10 @@ const RocketsContainer = () => {
   const dataRo = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
+    if (!dataRo.length) {
+      dispatch(getRockets());
+    }
+  }, [dispatch, dataRo.length]);
   return (
 
     <>
