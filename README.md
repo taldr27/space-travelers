@@ -10,7 +10,7 @@
 - Linters
 - Redux
 
-# [Live view]()
+# [Live view](https://deploy-preview-38--singular-maamoul-ab8f49.netlify.app/)
 
 ## Getting Started
 
