@@ -1,32 +1,33 @@
 .parentLielementRock {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
   gap: 2em;
 }
 
-.licontent {
+.rocketDiv {
   display: flex;
   width: 100%;
-  padding-inline: 3em;
+  padding-inline: 4em;
+  max-height: 30em;
+  gap: 1em;
 }
 
 .image_rockets {
-  max-width: 90%;
+  max-width: 22em;
 }
 
-.imgWrapper {
-  width: 30%;
-}
 
 .rigthContent {
-  width: 80%;
   display: flex;
-  align-items: flex-start;
-  font-size: 1.9em;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding-inline-end: 2.4em;
 }
 
+.btn-reserve {
+  align-self: flex-start;
+  height: 3.2em;
+  min-width: 10em;
+}
+/*
 .buttonConfirm {
   background-color: #18a2b8;
   border-radius: 0.5em;
@@ -35,4 +36,4 @@
   border: none;
   padding: 5px;
   color: white;
-}
+} */

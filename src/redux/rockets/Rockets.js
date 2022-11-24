@@ -1,5 +1,5 @@
-import axios from 'axios';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const GETTED_ROCKETS = 'GETTED_ROKCETS';
 

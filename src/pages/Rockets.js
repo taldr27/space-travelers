@@ -16,7 +16,7 @@ const RocketsContainer = () => {
 
     <>
       <Nav />
-      <ul className="parentLielementRock">
+      <div className="parentLielementRock">
         { dataRo.map((r) => (
           <Lielem
             key={r.id}
@@ -28,7 +28,7 @@ const RocketsContainer = () => {
           />
         ))}
 
-      </ul>
+      </div>
     </>
   );
 };

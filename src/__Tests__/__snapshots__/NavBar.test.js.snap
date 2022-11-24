@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render Navbar 1`] = `
+exports[`Render Navbar 1`] = `
 <header
   className="header"
 >
