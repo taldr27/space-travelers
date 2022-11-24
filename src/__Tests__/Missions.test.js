@@ -22,7 +22,7 @@ describe('Missions Testing', () => {
   });
 
   test('Render Missions', () => {
-    const renderMissions = rendere.create(
+    const renderMissions = renderer.create(
       <Provider store={store}>
         <BrowserRouter>
           <Missions />

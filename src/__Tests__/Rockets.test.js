@@ -6,7 +6,7 @@ import store from '../redux/configureStore';
 
 describe('Rockets Testing', () => {
   test('Render Rockets', () => {
-    const renderRocket = renderer.create(
+    const renderRockets = renderer.create(
       <Provider store={store}>
         <BrowserRouter>
           <RocketsContainer />

@@ -15,7 +15,6 @@
   max-width: 22em;
 }
 
-
 .rigthContent {
   display: flex;
   flex-direction: column;
@@ -27,13 +26,13 @@
   height: 3.2em;
   min-width: 10em;
 }
-/*
+
 .buttonConfirm {
   background-color: #18a2b8;
   border-radius: 0.5em;
-  font-size: 0.6em;
+  font-size: 1em;
   font-weight: 500;
   border: none;
   padding: 5px;
   color: white;
-} */
+}
