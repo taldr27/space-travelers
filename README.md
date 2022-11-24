@@ -1,43 +1,101 @@
+<a name="readme-top"></a>
 
-# Getting Started
+<div align="center">
 
-**[Space travelers]** You can see several pictures with a short description about missions and rockets and you can simulate a making reservation with one of them.
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-# Built With
-- Routers React
-- Gitflow
-- React
-- Linters
-- Redux
 
-# [Live view](https://deploy-preview-38--singular-maamoul-ab8f49.netlify.app/)
+</div>
 
-## Getting Started
+# 📗 Table of Contents
 
-** Download,test,edit, make a fork  just read the instructions and enjoy the project **
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [📝 License](#license)
 
-To get a local copy up and running follow these simple example steps.
+<!-- PROJECT DESCRIPTION -->
 
-> You must have an account on git hub. [Git Hub](https://github.com/)
+# 📖 Space Travelers Project <a name="about-project"></a>
 
-> You must have installed git in your local environment. [Git](https://git-scm.com/download/win)
+> You can see several pictures with a short description about missions and rockets and you can simulate a making reservation with one of them.
 
-> If you just want to take a look quickly, make a fork and open the project in the web browser by adding ".dev" instead of ."com" in the repo link.
-- Example : https://github.com/taldr27/space-travelers
+## 🛠 Built With <a name="built-with"></a>
 
-> Install a text-editor you prefer. [Code editors](https://desarrolloweb.com/colecciones/editores-codigo).
 
-> Execute git clone [repo link] in your git bash or terminal.
+<!-- Features -->
 
-### copy link the repository.
 
-[clone this repo](https://github.com/taldr27/space-travelers)
+- **React**
+- **Redux**
+- **Jest**
+- **Linters**
+- **GitFlow**
 
-> Follow these steps to run the project ⚠️
-> step 2: execute with the corresponding path "npm run start"
+<!-- LIVE DEMO -->
 
-## Authors
+## 🚀 Live Demo <a name="live-demo"></a>
 
+
+- [Live Demo Link](https://deploy-preview-38--singular-maamoul-ab8f49.netlify.app/)
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+>### Prerequisites
+ - CMD
+ - Node.js
+>### Setup
+
+- Clone this [repository](git@github.com:taldr27/space-travelers.git) to your desired folder.
+- Access `cd space-travelers`
+
+
+>### Install
+
+- Write `npm install`
+
+>### Usage
+
+- Execute `npm run`
+
+>### Run tests
+
+- Execute `npm test`
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
+
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+## 🤝 Contributing <a name="contributing">
 👤 ***Diego Garcia*
 
 - GitHub: [taldr27](https://github.com/taldr27)
@@ -49,20 +107,27 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [J2ZROMERO](https://github.com/J2ZROMERO)
 - Twitter: [@JOSEZEPED4](https://twitter.com/JOSEZEPED4)
-- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zepeda-733ab91ab/)
+- LinkedIn: [JOSE ZEPEDA](https://www.linkedin.com/in/jose-zepeda-733ab91ab/)</a>
 
-## 🤝 Contributing
+</a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<!-- SUPPORT -->
 
-Give a ⭐️ if you like this project!
+## ⭐️ Show your support <a name="support"></a>
 
+> Feel free to contact us if you use this project approach and the project itself.
 
+<!-- LICENSE -->
 
-## 📝 License
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p><a name="readme-top"></a>
+
