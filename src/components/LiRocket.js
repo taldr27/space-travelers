@@ -18,35 +18,32 @@ const Lielem = ({
   };
 
   return (
-    <li className="licontent">
+    <div className="rocketDiv">
       <div className="imgWrapper">
         <img src={img} alt="60px" className="image_rockets" />
       </div>
       <div className="rigthContent">
-        <div>
-          <p
-            style={{ display: 'none' }}
-            className={`reservationL_${id}`}
-          >
-            Reserved
-          </p>
-          <h1 className="titleRocket">{name}</h1>
+        <p
+          style={{ display: 'none' }}
+          className={`reservationL_${id}`}
+        >
+          Reserved
+        </p>
+        <h1 className="titleRocket">{name}</h1>
 
-          <p className="parafRocket">
-            {reserved && (<button type="button" className="buttonConfirm">Reserved</button>)}
-            {description}
-          </p>
-          {!reserved && (
-            <Button id={id} variant="primary" type="button" onClick={reservation}>Reserve Rocket</Button>
-          )}
-          {reserved && (
-            <Button id={id} variant="outline-secondary" type="button" onClick={cancelReservation}>Cancel Reservation</Button>
+        <p className="parafRocket">
+          {reserved && (<button type="button" className="buttonConfirm">Reserved</button>)}
+          {description}
+        </p>
+        {!reserved && (
+          <Button id={id} className="btn-reserve" variant="primary" type="button" onClick={reservation}>Reserve Rocket</Button>
+        )}
+        {reserved && (
+          <Button id={id} className="btn-reserve" variant="outline-secondary" type="button" onClick={cancelReservation}>Cancel Reservation</Button>
 
-          )}
-
-        </div>
+        )}
       </div>
-    </li>
+    </div>
   );
 };
 export default Lielem;
