@@ -1,0 +1,24 @@
+.table-container {
+  width: 100%;
+}
+
+table {
+  padding-inline: 2em;
+  border-collapse: initial !important;
+}
+
+.thMission {
+  width: 10%;
+}
+
+.thDescription {
+  width: 65%;
+}
+
+.thStatus {
+  width: 15%;
+}
+
+.leaveBtn {
+  border: 1px solid red;
+}
