@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+}
+
+.table-bootstrap {
+  width: 40% !important;
+  border: 5px solid black;
+}
+
+.tables {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}

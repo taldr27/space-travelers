@@ -1,0 +1,38 @@
+.parentLielementRock {
+  display: grid;
+  gap: 2em;
+}
+
+.rocketDiv {
+  display: flex;
+  width: 100%;
+  padding-inline: 4em;
+  max-height: 30em;
+  gap: 1em;
+}
+
+.image_rockets {
+  max-width: 22em;
+}
+
+.rigthContent {
+  display: flex;
+  flex-direction: column;
+  padding-inline-end: 2.4em;
+}
+
+.btn-reserve {
+  align-self: flex-start;
+  height: 3.2em;
+  min-width: 10em;
+}
+
+.buttonConfirm {
+  background-color: #18a2b8;
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  padding: 5px;
+  color: white;
+}
